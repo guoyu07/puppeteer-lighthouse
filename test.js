@@ -3,9 +3,6 @@ const puppeteer = require('puppeteer');
 const settings = require('./src/settings');
 const fs = require('fs');
 
-const url = "https://www.pokedex.org/";
-const config = null;
-
 function launchChromeAndRunLighthouse(url, config) {
     return puppeteer.launch(settings)
         .then(browser => {
@@ -21,12 +18,14 @@ function launchChromeAndRunLighthouse(url, config) {
         });
 }
 
-launchChromeAndRunLighthouse(url, config).then(results => {
-    let auditResult = JSON.stringify(results);
+module.exports = function (url, config) {
+    launchChromeAndRunLighthouse(url, config).then(results => {
+        let auditResult = JSON.stringify(results);
 
-    return fs.writeFile("test.json", auditResult, 'utf8', err => {
-        if (err) throw err;
+        return fs.writeFile("test.json", auditResult, 'utf8', err => {
+            if (err) throw err;
 
-        console.log("Done!");
+            console.log("Done!");
+        });
     });
-});
+};
