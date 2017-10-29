@@ -1,9 +1,6 @@
-const path = require('path');
-
-function settings() {
-    //
-}
-
 module.exports = {
-    settings,
+    headless: false,
+    args: [
+        '--remote-debugging-port=9222'
+    ]
 };
