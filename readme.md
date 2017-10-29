@@ -11,10 +11,9 @@ Run Lighthouse through Puppeteer!
 To install:
 
 ```
-npm i @TODO
+npm i puppeteer-lighthouse
 - OR -
-yarn add @TODO
-
+yarn add puppeteer-lighthouse
 ```
 
 > **Note**: Puppeteer downloads Chromium.
