@@ -1,6 +1,6 @@
 {
     "name": "puppeteer-lighthouse",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "main": "test.js",
     "author": {
         "name": "Elliot Evans",
