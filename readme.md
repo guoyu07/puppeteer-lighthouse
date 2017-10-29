@@ -1,23 +1,20 @@
-# Puppeteer Lighthouse 
+# puppeteer-lighthouse 
 
-End-to-end testing made simple
+Run Lighthouse through Puppeteer!
 
 > @TODO
 
 ## Installation
 
-> *Note: Throughout requires at least Node v6.4.0 due to Puppeteer
+> **Note**: requires at least Node v6.4.0 due to Puppeteer
 
-To install Throughout using NPM:
-
-```
-npm i 
-```
-
-To install Throughout using Yarn:
+To install:
 
 ```
-yarn add 
+npm i @TODO
+- OR -
+yarn add @TODO
+
 ```
 
 > **Note**: Puppeteer downloads Chromium.
@@ -28,3 +25,11 @@ yarn add
 @TODO
 
 ```
+
+## Upcoming 
+
+* Ability to scape the site
+* Ability to run tests in parallel
+* Ability to an Audit test suite
+* Ability to audit all pages of a site
+* Ability to take screenshots of the site
