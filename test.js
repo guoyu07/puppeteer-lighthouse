@@ -19,13 +19,14 @@ function launchChromeAndRunLighthouse(url, config) {
 }
 
 module.exports = function (url, config) {
-    launchChromeAndRunLighthouse(url, config).then(results => {
-        let auditResult = JSON.stringify(results);
+    launchChromeAndRunLighthouse(url, config)
+        .then(results => {
+            let auditResult = JSON.stringify(results);
 
-        return fs.writeFile("test.json", auditResult, 'utf8', err => {
-            if (err) throw err;
+            return fs.writeFile("test.json", auditResult, 'utf8', err => {
+                if (err) throw err;
 
-            console.log("Done!");
+                console.log("Done!");
+            });
         });
-    });
 };

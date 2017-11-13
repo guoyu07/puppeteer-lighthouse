@@ -1,6 +1,4 @@
 const puppeteerLighthouse = require('./test');
+const config = require('./src/config')();
 
-const url = "https://www.pokedex.org/";
-const config = null;
-
-puppeteerLighthouse(url, config);
+puppeteerLighthouse(config.url[0], config.audit);
