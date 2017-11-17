@@ -1,7 +1,10 @@
-module.exports = function () {
-    const _url = [
-        'https://www.pokedex.org/'
-    ];
+module.exports = {
+    config
+};
+
+
+function config() {
+    const _url = 'https://www.pokedex.org/';
 
     const _audit = {
         passes: [{
@@ -52,7 +55,7 @@ module.exports = function () {
     };
 
     return {
-      audit: _audit,
-      url: _url
+        audit: _audit,
+        url: _url
     }
-};
+}
